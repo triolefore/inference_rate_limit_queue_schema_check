@@ -1,11 +1,11 @@
-# oplib_jd362
+# inference_rate_limit_queue_schema_check
 
 **校验算子库维护工程师·推理服务的限流与排队的字段结构并列出缺失项。**
 
-`oplib_jd362` —— 从样本里推断算子库维护工程师·推理服务的限流与排队应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
+`inference_rate_limit_queue_schema_check` —— 从样本里推断算子库维护工程师·推理服务的限流与排队应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`oplib_jd362.py` 拷走就能用
+- 单文件，`inference_rate_limit_queue_schema_check.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install triolefore-oplib_jd362
+pip install triolefore-inference_rate_limit_queue_schema_check
 ```
 
 装完直接用命令名调用：
 
 ```bash
-oplib_jd362 --help
+inference_rate_limit_queue_schema_check --help
 ```
 
-也可以不用安装，直接把 `oplib_jd362.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `inference_rate_limit_queue_schema_check.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ oplib_jd362 --help
 ## 用法
 
 ```bash
-python oplib_jd362.py --file input.txt
-python oplib_jd362.py --text "示例内容"
-python oplib_jd362.py --file input.txt --json
+python inference_rate_limit_queue_schema_check.py --file input.txt
+python inference_rate_limit_queue_schema_check.py --text "示例内容"
+python inference_rate_limit_queue_schema_check.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python oplib_jd362.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_oplib_jd362.py
+python test_inference_rate_limit_queue_schema_check.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_oplib_jd362.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/triolefore/oplib_jd362>
+- GitHub 仓库：<https://github.com/triolefore/inference_rate_limit_queue_schema_check>
 
 ---
 
@@ -79,7 +79,7 @@ python test_oplib_jd362.py
 triolefore 做算子库维护工程师·推理服务的限流与排队相关的问题，方向对标微软的负责人算子库维护工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://triolefore.github.io>
-- 仓库：<https://github.com/triolefore/oplib_jd362>
+- 仓库：<https://github.com/triolefore/inference_rate_limit_queue_schema_check>
 
 ## 许可
 

@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "triolefore-oplib_jd362"
+name = "triolefore-inference_rate_limit_queue_schema_check"
 version = "0.1.0"
 description = "从样本里推断算子库维护工程师·推理服务的限流与排队应有的字段集合，逐字段检查存在性与类型，缺失项单独列出"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://triolefore.github.io"
-Repository = "https://github.com/triolefore/oplib_jd362"
-Issues = "https://github.com/triolefore/oplib_jd362/issues"
+Repository = "https://github.com/triolefore/inference_rate_limit_queue_schema_check"
+Issues = "https://github.com/triolefore/inference_rate_limit_queue_schema_check/issues"
 
 [project.scripts]
-oplib_jd362 = "oplib_jd362:main"
+inference_rate_limit_queue_schema_check = "inference_rate_limit_queue_schema_check:main"
 
 [tool.setuptools]
-py-modules = ["oplib_jd362"]
+py-modules = ["inference_rate_limit_queue_schema_check"]
